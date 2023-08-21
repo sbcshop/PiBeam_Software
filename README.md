@@ -37,13 +37,28 @@ An in-depth setup and working guide for PiBeam is available on this github.
 
 
 ### Interfacing Details
+- SD Card interfacing info
   | Pico | Hardware Pin | Function |
   |---|---|---|
-  |GP2 | SCLK | Clock pin of SPI interface for microSD card |
-  |GP3 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface for microSD card|
-  |GP4 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface for microSD card|
-  |GP5 | CS   | Chip Select pin of SPI interface for microSD card|
+  |GP18 | SCLK | Clock pin of SPI interface for microSD card |
+  |GP19 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface for microSD card|
+  |GP16 | DOUT | MISO (Master IN Slave OUT) data pin of SPI interface for microSD card|
+  |GP17 | CS   | Chip Select pin of SPI interface for microSD card|
 
+- Display interfacing info
+  | Pico | Hardware Pin | Function |
+  |---|---|---|
+  |GP10 | SCLK | Clock pin of SPI interface for display |
+  |GP11 | DIN  | MOSI (Master OUT Slave IN) data pin of SPI interface|
+  |GP8 | D/C | Data/command line of SPI interface for display |
+  |GP12 | RESET | Display reset pin |
+  |GP9 | CS   | Chip Select pin of SPI interface for display| 
+  |GP13 | BL | Backlight pin for display |
+
+- Other peripherals
+  | Pico | Hardware Pin | Function |
+  |---|---|---|
+  | |  |  |
 
 
 ### 1. Step to install boot Firmware
