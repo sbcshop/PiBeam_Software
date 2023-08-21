@@ -28,6 +28,7 @@ An in-depth setup and working guide for PiBeam is available on this github.
 - SPI Interface
 - ST7789 Display Driver
 - Type A USB interface
+- Operating Temperature: -20°C to 70°C
 
 
 ## Getting Started with PiBeam
@@ -37,6 +38,13 @@ An in-depth setup and working guide for PiBeam is available on this github.
 
 
 ### Interfacing Details
+
+- IR Transmitter and Receiver info
+  | Pico | Hardware Pin | Function |
+  |---|---|---|
+  |GP0 | TX | IR transmitter |
+  |GP1 | RX  | IR Receiver |
+
 - SD Card interfacing info
   | Pico | Hardware Pin | Function |
   |---|---|---|
@@ -58,41 +66,74 @@ An in-depth setup and working guide for PiBeam is available on this github.
 - Other peripherals
   | Pico | Hardware Pin | Function |
   |---|---|---|
-  | |  |  |
+  | GP25 | STAT | Status, programmable LED |
+  | GP7 | BT1 | Programmable button |
+  | GP28 | BT2 | Programmable button |
+  | GP20 | BT3 | Programmable button |
 
 
 ### 1. Step to install boot Firmware
    - Every PiBeam board will be provided with boot firmware already installed, so you can skip this step and directly go to step 2.
-   - If in case you want to install firmware for your board, Push and hold the BOOTSEL button and plug your Pico W into the USB port of your computer. Release the BOOTSEL button after your Pico is connected.
-   <img src="https://github.com/sbcshop/PiBeam_Software/blob/main/images/pico_bootmode.gif">
+   - If in case you want to install firmware for your PiBeam, Push and hold the BOOTSEL button and plug your PiBeam into the USB port of your computer. Release the BOOTSEL button after your PiBeam is connected to USB port.
+   <img src="">
    
    - It will mount as a Mass Storage Device called RPI-RP2.
-   - Drag and drop the MicroPython UF2 - [PiBeam_firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/PiBeam_firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your Pico will reboot. You are now running MicroPython on PiBeam.
+   - Drag and drop the MicroPython UF2 - [PiBeam_firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/PiBeam_firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your PiBeam will reboot. You are now running MicroPython on PiBeam.
+   - If you want to use PiBeam as HID then download and install [HID firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/HID_firmware.uf2)
 
+### 2. Onboard LED Blink 
+   - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
+   - Once done start **Thonny IDE application**, Connect PiBeam to laptop/PC.
+   - Select device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
+   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/onboardLED_demo.py), then click on the green run button to make your script run on PiBeam. Make sure that you have also saved [PiBeam Library]() file to device to avoid any execution error.
+     
+      <img src= "https://github.com/sbcshop/PiBeam_Software/blob/main/images/LED_blink.png" />
+     
+     Now that we've reached this point, you're executing your script through Thonny IDE, so if you unplug PiBeam, it will stop running. To run your script without using an IDE, simply power up PiBeam and it should run your script, go to step 3.
+
+### 3. How to move your script on PiBeam
+   - Click on File -> Save Copy -> select Raspberry Pi Pico , Then save file as main.py
+     
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software/blob/main/images/transfer_script_pico.gif" />
+   
+      In similar way you can add various python code files to Pico of PiBeam. Also you can try out sample codes given here in [examples folder](https://github.com/sbcshop/PiBeam_Software/tree/main/examples). 
+   
+   - But in case if you want to move multiple files at one go, example suppose you are interested to save library files folder, below image demonstrate that
+     
+      <img src="https://github.com/sbcshop/3.2_Touchsy_Pico_W_Capacitive_Software/blob/main/images/multiple_file_transfer.gif" />
+   - Here, we need only one library file [PiBeam.py]() for most of our code to try out
+   - 
+**NOTE: Don't rename _lib_ files** or and other files, only your main code script should be rename as main.py for standalone execution without Thonny.
+
+   
 
 ### Example Codes
    Save whatever example code file you want to try as **main.py** in **PiBeam** as shown in above [step 3](), also add related lib files with default name.
-   In [example]() folder you will find demo example script code to test onboard components of PiBeam like 
-   - [Buzzer]() : code to test onboard Buzzer
+   In [example](https://github.com/sbcshop/PiBeam_Software/tree/main/examples) folder you will find demo example script code to test onboard components of PiBeam like 
+   - [Button and LED]() : code to test onboard Buzzer
    - [SD card]() : code to test onboard micro SD card interfacing
-   - []() :
+   - [IR Transmitter]() : Demo code to test IR data transmission
+   - [IR Receiver with LCD]: Demo code check received IR data on TFT display
    
    
    Using this sample code as a guide, you can modify, build, and share codes!!  
    
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [Step File]()
-  * [MicroPython getting started for RPi Pico/Pico W]()
-  * [Pico W Getting Started]()
-  * [RP2040 Datasheet]()
+  * [Schematic](https://github.com/sbcshop/PiBeam_Hardware/blob/main/Design%20Data/Sch%20PiBeam.pdf)
+  * [Hardware Files](https://github.com/sbcshop/PiBeam_Hardware)
+  * [Step File](https://github.com/sbcshop/PiBeam_Hardware/blob/main/Mechanical%20Data/Step%20PiBeam.step)
+  * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
+  * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
+  * [RP2040 Datasheet](https://github.com/sbcshop/HackyPi-Hardware/blob/main/Documents/rp2040-datasheet.pdf)
 
 
 ## Related Products
-   
-   
-   Shields are compatible with PiBeam, Ardi-32 and Other Arduino Uno Compatible boards.
+  * [ReadPi NFC](https://shop.sb-components.co.uk/products/readpi-an-rfid-nfc-reader-powered-with-raspberry-pi-pico-w?variant=40478483087443) - ReadPi with 13.56MHz NFC reader/writer powered by Raspberry Pi Pico W
+  * [ArdiPi](https://shop.sb-components.co.uk/collections/latest-collections/products/ardipi-uno-r3-alternative-board-based-on-pico-w) - Arduino Uno form factor variants based on Raspberry Pi Pico W
+  * [3.2" Touchsy Pico W](https://shop.sb-components.co.uk/collections/pre-order/products/touchsy-3-2-touch-lcd-display-based-on-pico-w) - 3.2" Touchsy Pico W with Resistive and Capacitive version.
+  * [1.14” LCD HAT](https://shop.sb-components.co.uk/products/1-14-lcd-hat-for-pico) - 1.14” LCD HAT for Pico is a 1.14-inch display expansion board module of 240×135 resolution.
+  * [1.14” LCD breakout](https://shop.sb-components.co.uk/products/1-14-inch-lcd-breakout) - The 1.14” LCD breakout is colorful and easy to experiment with graphics.
+    
 
 ## Product License
 
