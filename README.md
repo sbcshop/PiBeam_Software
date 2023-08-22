@@ -34,8 +34,18 @@ An in-depth setup and working guide for PiBeam is available on this github.
 ## Getting Started with PiBeam
 ### Hardware Overview
 #### Pinout
-<img src="">
 
+<img src="https://github.com/sbcshop/PiBeam_Software/blob/main/images/pibeampinout.jpg">
+
+- (1) Type A 
+- (2) Programmable LED
+- (3) 1.14” Display
+- (4) IR Transmitter 
+- (5) Power LED
+- (6) IR Receiver
+- (7) RP2040
+- (8), (10) & (11) Programmable Buttons
+- (9) Boot Button
 
 ### Interfacing Details
 
