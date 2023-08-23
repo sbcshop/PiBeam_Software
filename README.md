@@ -83,7 +83,7 @@ An in-depth setup and working guide for PiBeam is available on this github.
 
 
 ### 1. Step to install boot Firmware
-   - Every PiBeam board will be provided with boot firmware already installed, so you can skip this step and directly go to step 2.
+   - Every PiBeam board will be provided with boot firmware already installed, so you can skip this step and directly go to [step 2](https://github.com/sbcshop/PiBeam_Software#2-onboard-led-blink).
    - If in case you want to install firmware for your PiBeam, Push and hold the BOOT button and plug your PiBeam into the USB port of your computer. Release the BOOT button after your PiBeam is connected to USB port.
    - It will mount as a Mass Storage Device called RPI-RP2.
    - Drag and drop the MicroPython UF2 - [PiBeam_firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/PiBeam_firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your PiBeam will reboot. You are now running MicroPython on PiBeam.
