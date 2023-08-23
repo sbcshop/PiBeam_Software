@@ -1,6 +1,6 @@
 To try above listed codes which gives ability to use PiBeam as HID device, you have to follow below instructions,
 
-## Firmware installation
+## Boot Firmware installation
    - Change PiBeam default micropython firmware with CircuitPython based boot fimware. Download Firmware from here or you can also install via Thonny IDE.
    - Push and hold the BOOT button and plug your PiBeam into the USB port of your computer. Release the BOOT button after your PiBeam is connected to USB port.
    - It will mount as a Mass Storage Device called RPI-RP2.
