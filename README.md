@@ -87,7 +87,7 @@ An in-depth setup and working guide for PiBeam is available on this github.
    - If in case you want to install firmware for your PiBeam, Push and hold the BOOT button and plug your PiBeam into the USB port of your computer. Release the BOOT button after your PiBeam is connected to USB port.
    - It will mount as a Mass Storage Device called RPI-RP2.
    - Drag and drop the MicroPython UF2 - [PiBeam_firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/PiBeam_firmware.uf2) file provided in this github onto the RPI-RP2 volume. Your PiBeam will reboot. You are now running MicroPython on PiBeam.
-   - If you want to use PiBeam as HID then download and install [CircuitPython HID firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/HID_firmware.uf2)
+   - If you want to use PiBeam as HID then you will have to install other boot firmware, instruction provided on [link](https://github.com/sbcshop/PiBeam_Software/edit/main/examples/HID_example_circuitpython/) 
 
 ### 2. Onboard LED Blink 
    - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
@@ -120,7 +120,10 @@ An in-depth setup and working guide for PiBeam is available on this github.
    - [SD card](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/sdcard_demo.py) : code to test micro SD card basic operations
    - [IR Transmitter](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/transmitter_demo.py) : Demo code to test IR data transmission
    - [IR Receiver with LCD](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/Receiver_LCD_sdcard_demo.py): Demo code to check received IR data on TFT display. Change protocol options as per your remote.
-   - [Control PC Camera using PiBeam](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/code.py) : This demo code opens windows PC camera when power button of TV remote pressed. For this demo first change boot firmware of PiBeam with [CircuitPython HID firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/HID_firmware.uf2) and next add complete [lib](https://github.com/sbcshop/PiBeam_Software/tree/main/examples/HID_example_circuitpython) folder having various libraries inside PiBeam.
+     
+     To try below HID codes follow instructions provided on [link](https://github.com/sbcshop/PiBeam_Software/tree/main/examples/HID_example_circuitpython)
+   - [Control PC Camera using PiBeam](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/code.py) : This demo code opens windows PC camera when power button of TV remote pressed.
+   - [Display Images](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/image_display.py) : This demonstrates how to display images on a PiBeam display screen.
    
    Using this sample code as a guide, you can modify, build, and share codes!!  
    
