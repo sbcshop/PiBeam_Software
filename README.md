@@ -93,7 +93,7 @@ An in-depth setup and working guide for PiBeam is available on this github.
    - Download **Thonny IDE** from [Download link](https://thonny.org/) as per your OS and install it.
    - Once done start **Thonny IDE application**, Connect PiBeam to laptop/PC.
    - Select device at the bottom right with a suitable COM port, as shown in the below figure. You might get a different COM port.
-   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/onboardLED_demo.py), then click on the green run button to make your script run on PiBeam. Make sure that you have also saved [PiBeam Library]() file to device to avoid any execution error.
+   - Write simple onboard blink Python code or [Download Led blink code](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/onboardLED_demo.py), then click on the green run button to make your script run on PiBeam. Make sure that you have also saved [PiBeam Library](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/PiBeam.py) file to device to avoid any execution error.
      
       <img src= "https://github.com/sbcshop/PiBeam_Software/blob/main/images/LED_blink.png" />
      
