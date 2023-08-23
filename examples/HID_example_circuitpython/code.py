@@ -1,3 +1,7 @@
+'''
+Code to test HID function of PiBeam, 
+PiBeam will open windows PC camera when it receive power button IR code from TV remote
+'''
 from adafruit_hid.keyboard import Keyboard, Keycode
 from keyboard_layout_win_uk import KeyboardLayout
 from adafruit_display_text import label
@@ -42,7 +46,7 @@ while True:
         led.on()
         print(val)
         #when power button of remote pressed, switch ON camera
-        #change operation as per requirement
+        #change operation as per requirement, code value maybe different for other buttons and different protocol. So confirm before adding to logic
         if val[0] == 13 and val[1] == 245 and val[2] == 191 and val[3] == 64: #(13, 245, 191, 64) - code received for power button of remote
             print("camera on")
             camera()
