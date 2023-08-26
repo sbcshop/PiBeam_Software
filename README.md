@@ -1,5 +1,5 @@
 # PiBeam_Software
-<img src="">
+
 Introducing PiBeam, the ultimate USB IR Transceiver that revolutionizes the way you control your devices. PiBeam offers a versatile and cost-effective way to enable wireless communication and control in a variety of embedded electronics applications.
 
 PiBeam is a DIY USB transceiver device that can be programmed to control and manage your computer, gaming console, or multimedia system, PiBeam provides a user-friendly interface with TFT 1.14” Display that ensures a smooth and intuitive experience.
