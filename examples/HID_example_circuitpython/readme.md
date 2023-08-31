@@ -8,11 +8,11 @@ To try above listed codes which gives ability to use PiBeam as HID device, you h
 
 ### Step 2: Libraries Setup
   - Once fimware step done, proceed to add complete [lib](https://github.com/sbcshop/PiBeam_Software/tree/main/examples/HID_example_circuitpython/lib) folder having various libraries inside PiBeam.
-  - Either copy and paste complete lib directly inside PiBeam or transfer file as shown in [step 3](https://github.com/sbcshop/PiBeam_Software/blob/main/README.md#3-how-to-move-your-script-on-pibeam) of getting started section
+  - Either copy and paste complete lib directly inside PiBeam or transfer file as shown in [step 3](https://github.com/sbcshop/PiBeam_Software/blob/main/README.md#3-how-to-move-your-script-on-pibeam) of getting started section.
 
 ### Step 3: Testing Codes
   - Open code which you want to try into Thonny IDE, then click on Green Run button on top left corner.
-  - To test any code you just have to save it as code.py into PiBeam's pico for standalone execution.
+  - To test any code examples provided here, save it as _**code.py**_ into PiBeam's pico for standalone execution.
 
 Examples:
 * [Demo_CameraOn_code.py](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/Demo_CameraOn_code.py) - Switch on Windows PC camera when power button pressed on TV Remote.
