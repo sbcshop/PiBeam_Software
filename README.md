@@ -122,8 +122,8 @@ An in-depth setup and working guide for PiBeam is available on this github.
    - [IR Receiver with LCD](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/Receiver_LCD_sdcard_demo.py): Demo code to check received IR data on TFT display. Change protocol options as per your remote.
      
      To try below HID codes follow instructions provided on [link](https://github.com/sbcshop/PiBeam_Software/tree/main/examples/HID_example_circuitpython)
-   - [Control PC Camera using PiBeam](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/code.py) : This demo code opens windows PC camera when power button of TV remote pressed.
-   - [Display Images](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/image_display.py) : This demonstrates how to display images on a PiBeam display screen.
+   - [Control PC Camera using PiBeam](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/Demo_CameraOn_code.py) : This demo code opens windows PC camera when power button of TV remote pressed.
+   - [Display Images](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/Display_Images_FromPiBeam/image_display.py) : This demonstrates how to display images on a PiBeam display screen.
    
    Using this sample code as a guide, you can modify, build, and share codes!!  
    
