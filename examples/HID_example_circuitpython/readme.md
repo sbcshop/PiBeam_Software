@@ -14,3 +14,7 @@ To try above listed codes which gives ability to use PiBeam as HID device, you h
   - Open code which you want to try into Thonny IDE, then click on Green Run button on top left corner.
   - To test any code you just have to save it as code.py into PiBeam's pico for standalone execution.
 
+Examples:
+* [Demo_CameraOn_code.py](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/Demo_CameraOn_code.py) - Switch on Windows PC camera when power button pressed on TV Remote.
+* [password_feeder_gmail](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/password_feeder_gmail.py): To enter password in gmail for logging with operation control from TV remote
+* Similar other two examples for image display on TFT with and without SD card on PiBeam.
