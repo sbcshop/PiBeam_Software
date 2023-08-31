@@ -7,7 +7,7 @@ To try above listed codes which gives ability to use PiBeam as HID device, you h
    - Drag and drop the Firmware UF2 - [PiBeam_HID_firmware](https://github.com/sbcshop/PiBeam_Software/blob/main/examples/HID_example_circuitpython/PiBeam_HID_firmware.uf2) file provided here onto the RPI-RP2 volume. Your PiBeam will reboot. You are now running CircuitPython on PiBeam.
 
 ### Step 2: Libraries Setup
-  - Once fimware step done, proceed to add complete [lib](https://github.com/sbcshop/PiBeam_Software/tree/main/examples/HID_example_circuitpython) folder having various libraries inside PiBeam.
+  - Once fimware step done, proceed to add complete [lib](https://github.com/sbcshop/PiBeam_Software/tree/main/examples/HID_example_circuitpython/lib) folder having various libraries inside PiBeam.
   - Either copy and paste complete lib directly inside PiBeam or transfer file as shown in [step 3](https://github.com/sbcshop/PiBeam_Software/blob/main/README.md#3-how-to-move-your-script-on-pibeam) of getting started section
 
 ### Step 3: Testing Codes
