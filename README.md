@@ -130,6 +130,7 @@ An in-depth setup and working guide for PiBeam is available on this github.
 ## Resources
   * [Schematic](https://github.com/sbcshop/PiBeam_Hardware/blob/main/Design%20Data/Sch%20PiBeam.pdf)
   * [Hardware Files](https://github.com/sbcshop/PiBeam_Hardware)
+  * [3D Case Design File](https://github.com/sbcshop/PiBeam_Hardware/blob/main/Mechanical%20Data/PiBeam%20Casing%20STL%20files.zip)
   * [Step File](https://github.com/sbcshop/PiBeam_Hardware/blob/main/Mechanical%20Data/Step%20PiBeam.step)
   * [MicroPython getting started for RPi Pico/Pico W](https://docs.micropython.org/en/latest/rp2/quickref.html)
   * [Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
